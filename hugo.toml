@@ -1,0 +1,55 @@
+# =================================================================
+# 1. CONFIGURACIÓN BÁSICA DEL SITIO
+# =================================================================
+
+# IMPORTANTE: Cambia esto por tu URL de GitHub Pages
+# Ejemplo: "https://adschexp.github.io/audif-store/"
+baseURL = "https://adschexp.github.io/audif-store/"
+
+languageCode = "es-cl"
+title = "Audif-Store | Tu tienda de audífonos"
+theme = "" 
+
+# Estas dos líneas son MAGIA para GitHub Pages:
+# Hacen que todos los enlaces funcionen aunque tu sitio esté en una subcarpeta
+relativeURLs = true
+canonifyURLs = false
+
+paginate = 10 
+  
+# =================================================================
+# 2. PARÁMETROS GLOBALES
+# =================================================================
+[params]
+  description = "La mejor selección de audífonos para todos tus gustos y necesidades."
+  
+# =================================================================
+# 3. CONFIGURACIÓN DEL MENÚ DE NAVEGACIÓN
+# =================================================================
+[menu]
+  [[menu.main]]
+    identifier = "inicio"
+    name = "Inicio"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "productos"
+    name = "Productos"
+    url = "productos/" 
+    weight = 2
+
+  [[menu.main]]
+    identifier = "contacto"
+    name = "Contacto"
+    url = "contacto/"
+    weight = 3
+
+# =================================================================
+# 4. CONFIGURACIONES ADICIONALES
+# =================================================================
+
+disableKinds = ["taxonomy", "term"]
+  
+[build]
+  writeStats = true

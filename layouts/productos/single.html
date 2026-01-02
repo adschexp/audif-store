@@ -1,0 +1,44 @@
+{{ define "main" }}
+<div class="main-content product-page">
+    
+    <article class="single-product-details">
+
+        <header class="product-header">
+            <h1 class="product-title">{{ .Title }}</h1>
+            <p class="product-price">Precio: ${{ .Params.price }}</p>
+        </header>
+
+        <section class="product-image-container">
+            <div class="product-image-placeholder">
+                [Imagen de {{ .Title }} - ID: {{ .Params.image }}]
+            </div>
+        </section>
+
+        <section class="product-description">
+            <h2 class="description-title">Detalles del Producto</h2>
+            {{ .Content }} {{/* Contenido Markdown bajo el Front Matter */}}
+        </section>
+
+        <section class="product-specs">
+            <h2 class="specs-title">Ficha Técnica</h2>
+            <ul>
+                <li><strong>Conectividad:</strong> {{ .Params.connectivity }}</li>
+                <li><strong>Colores Disponibles:</strong> {{ delimit .Params.color ", " }}</li>
+                <li><strong>Peso (aprox.):</strong> {{ .Params.weight }} gramos</li>
+                <li>
+                    <strong>Disponibilidad:</strong> 
+                    {{ if .Params.stock }}
+                        <span class="in-stock">En Stock 🟢</span>
+                    {{ else }}
+                        <span class="out-of-stock">Agotado 🔴</span>
+                    {{ end }}
+                </li>
+            </ul>
+        </section>
+        
+        <a href="#" class="btn-primary add-to-cart">Añadir al Carrito (Placeholder)</a>
+        
+    </article>
+
+</div>
+{{ end }}

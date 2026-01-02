@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+  {{ with .Params.hero }}
+  <section style="display: flex; align-items: center; padding: 4rem 10%; flex-wrap: wrap; background: #fdfdfd;">
+    <div style="flex: 1; min-width: 300px;">
+      <h1 style="font-size: 3rem; font-weight: 800; color: #1d1d1f;">{{ .title }}</h1>
+      <p style="font-size: 1.2rem; color: #86868b; margin: 1.5rem 0;">{{ .subtitle }}</p>
+      <a href="{{ .button_link }}" style="display: inline-block; background: #0071e3; color: white; padding: 12px 28px; border-radius: 50px; text-decoration: none; font-weight: bold;">{{ .button_text }}</a>
+    </div>
+    <div style="flex: 1; min-width: 300px; text-align: center;">
+      <img src="{{ .image }}" alt="Hero" style="max-width: 100%; height: auto; filter: drop-shadow(0 15px 25px rgba(0,0,0,0.1));">
+    </div>
+  </section>
+  {{ end }}
+
+  <section style="padding: 4rem 10%;">
+    <h2 style="text-align: center; margin-bottom: 3rem; font-size: 2.5rem;">Modelos Destacados</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+      {{ range .Params.modelos_destacados }}
+      <div style="background: white; border-radius: 20px; padding: 2rem; box-shadow: 0 8px 20px rgba(0,0,0,0.05); text-align: center; border: 1px solid #f0f0f0;">
+        <div style="height: 200px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+          <img src="{{ .image }}" alt="{{ .nombre }}" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+        </div>
+        <h3 style="margin-bottom: 10px;">{{ .nombre }}</h3>
+        <p style="color: #86868b; font-size: 0.9rem;">{{ .description }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </section>
+
+{{ end }}

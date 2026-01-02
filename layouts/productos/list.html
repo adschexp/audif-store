@@ -1,0 +1,23 @@
+{{ define "main" }}
+<div class="main-content product-list-page">
+    
+    <header class="page-header">
+        <h1 class="page-title">{{ .Title }}</h1>
+        {{ .Content }}
+    </header>
+
+    <div class="product-grid">
+        {{ range .Pages }}
+        <div class="product-card">
+            <h2>{{ .Title }}</h2>
+            <p class="product-card-price">${{ .Params.price }}</p>
+            {{/* Asume que tienes un short_description en el Front Matter del producto */}}
+            <p>{{ .Params.short_description }}</p>
+            {{/* Enlace a la página individual del producto */}}
+            <a href="{{ .Permalink }}" class="btn-secondary">Ver Detalles</a>
+        </div>
+        {{ end }}
+    </div>
+
+</div>
+{{ end }}
