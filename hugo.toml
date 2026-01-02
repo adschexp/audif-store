@@ -8,15 +8,15 @@ baseURL = "https://adschexp.github.io/audif-store/"
 
 languageCode = "es-cl"
 title = "Audif-Store | Tu tienda de audífonos"
-theme = "" 
+#theme = "" 
 
 # Estas dos líneas son MAGIA para GitHub Pages:
 # Hacen que todos los enlaces funcionen aunque tu sitio esté en una subcarpeta
 relativeURLs = true
 canonifyURLs = false
 
-paginate = 10 
-  
+[pagination]
+  pagerSize = 10  
 # =================================================================
 # 2. PARÁMETROS GLOBALES
 # =================================================================
