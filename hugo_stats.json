@@ -11,6 +11,7 @@
       "h3",
       "head",
       "header",
+      "hr",
       "html",
       "img",
       "li",
@@ -60,7 +61,9 @@
       "whatsapp-float"
     ],
     "ids": [
+      "-canales-de-atención",
       "catálogo-completo",
+      "envíos-a-todo-el-país-",
       "tienes-preguntas"
     ]
   }

@@ -36,13 +36,13 @@ canonifyURLs = false
   [[menu.main]]
     identifier = "productos"
     name = "Productos"
-    url = "productos/" 
+    url = "/productos/" 
     weight = 2
 
   [[menu.main]]
     identifier = "contacto"
     name = "Contacto"
-    url = "contacto/"
+    url = "/contacto/"
     weight = 3
 
 # =================================================================
