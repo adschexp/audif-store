@@ -12,8 +12,8 @@ title = "Audif-Store | Tu tienda de audífonos"
 
 # Estas dos líneas son MAGIA para GitHub Pages:
 # Hacen que todos los enlaces funcionen aunque tu sitio esté en una subcarpeta
-relativeURLs = true
-canonifyURLs = false
+relativeURLs = false
+canonifyURLs = true
 
 [pagination]
   pagerSize = 10  
