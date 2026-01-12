@@ -2,7 +2,7 @@
 title: "Bienvenidos a la Tienda de Audífonos Wireless"
 hero:
   title: "Bienvenidos a la Tienda de Audífonos Wireless"
-  subtitle: "Encuentra la mejor calidad de sonido sin cables. Exploramos la tecnología para ofrecerte solo lo mejor."
+  subtitle: "Encuentra la mejor calidad de sonido wireless. Exploramos la tecnología para ofrecerte solo lo mejor."
   image: "/images/hero.webp"  # Ahora lleva una / al principio
   button_text: "Ver Catálogo"
   button_link: "/productos/"
